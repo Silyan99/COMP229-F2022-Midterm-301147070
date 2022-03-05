@@ -1,2 +1,2 @@
-# comp229-f2022-midterm-group2-301147070
+ COMP229-F2022-Midterm-301147070
 The Favorite Movie List App
