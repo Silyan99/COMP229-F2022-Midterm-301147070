@@ -9,13 +9,13 @@ let movies = require('../models/movies');
 /* GET movies List page. READ */
 router.get('/', (req, res, next) => {
   // find all movie in the books collection
-  movies.find( (err, list) => {
+  movies.find((err, list) => {
     if (err) {
       return console.error(err);
     }
     else {
       res.render('movies/index', {
-        title: 'Movies',
+        title: 'movies',
         list: list
       });
     }
@@ -25,11 +25,10 @@ router.get('/', (req, res, next) => {
 
 //  GET the Movies Details page in order to add a new Movies
 router.get('/add', (req, res, next) => {
-
-    /*****************
-     * ADD CODE HERE *
-     *****************/
-
+    res.render('movies/details', {
+      title: 'Add Movie',
+      list: {}
+    });
 });
 
 // POST process the Movies Details page and create a new Movies - CREATE
