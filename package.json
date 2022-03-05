@@ -1,5 +1,5 @@
 {
-  "name": "comp229-f2022-midterm",
+  "name": "comp229-f2022-midterm-group2-301147070",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -45,14 +45,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Silyan99/COMP229-F2022-Midterm-301147070.git"
+    "url": "https://github.com/Silyan99/comp229-f2022-midterm-group2-301147070.git"
   },
   "keywords": [
     "NodeJS",
     "ExpressJS",
     "EJS"
   ],
-  "author": "Your Name Goes Here",
+  "author": "Bharat Silyan",
   "license": "ISC",
   "bugs": {
     "url": ""
