@@ -42,10 +42,16 @@ router.post('/add', (req, res, next) => {
 
 // GET the Movies Details page in order to edit an existing Movies
 router.get('/:id', (req, res, next) => {
-
-    /*****************
-     * ADD CODE HERE *
-     *****************/
+  movies.find({ _id: req.params["id"].trim() }).then((movies)=>{
+    res.render('movies/details', {
+      title: 'Edit Movie',
+      list: movies[0]
+    });
+  },(err)=>{
+    if (err) {
+      return console.error(err);
+    }
+  });
 });
 
 // POST - process the information passed from the details form and update the document
