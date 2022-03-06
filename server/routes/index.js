@@ -1,3 +1,8 @@
+/**
+ * Name: Bharat Silyan
+ * Student Id: 301147070
+ * File Name: index.js
+ */
 // modules required for routing
 let express = require('express');
 let router = express.Router();
@@ -9,7 +14,7 @@ let movies = require('../models/movies');
 /* GET home page. wildcard */
 router.get('/', (req, res, next) => {
   res.render('content/index', {
-    title: 'Home',
+    title: 'Welcome',
     movies: ''
    });
 });
